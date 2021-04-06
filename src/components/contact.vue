@@ -23,6 +23,7 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
+import { getMailToInfoLink } from "@/util/email";
 
 interface ContactType {
   url?: string;
@@ -32,11 +33,8 @@ interface ContactType {
 
 function sendMail(): void {
   //prevent crawling the email address by bots
-  const scheme = "mailto://";
-  const domain = "kopf.codes";
-  const user = "info";
-
-  window.open(`${scheme}${user}@${domain}`);
+  const target = getMailToInfoLink();
+  window.open(target);
 }
 
 @Component
