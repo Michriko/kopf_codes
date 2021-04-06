@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg" width="20.0px" height="20.0px" viewBox="0 0 20.0 20.0" version="1.1">
+   <g>
+      <rect
+         style="fill:#0000ff;
+         fill-opacity:0.00384617;
+         fill-rule:evenodd;
+         stroke:#424242;
+         stroke-width:2.62300483;
+         stroke-linejoin:round;
+         stroke-miterlimit:4;
+         stroke-dasharray:none;
+         stroke-opacity:1;
+         paint-order:normal"
+         width="14.089323" height="14.089325" x="7.1143351" y="-7.0470495" ry="2.8973207"
+         transform="matrix(0.70614574,0.70806652,-0.70614574,0.70806652,0,0)" />
+      <path
+         style="fill:none;stroke:#424242;stroke-width:2.19089;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 8,7 v 6 0" id="path871" />
+      <path
+         style="fill:none;stroke:#424242;stroke-width:2.19089;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 12,7 v 6 0" id="path873" />
+   </g>
+</svg>
