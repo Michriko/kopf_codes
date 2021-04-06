@@ -10,25 +10,14 @@
         <v-container>
           <v-row>
             <v-col v-for="(tech, index) in techs" :key="index">
-              <tech-card :description="tech.description" :title="tech.title" />
+              <tech-card
+                :description="tech.items"
+                :title="tech.title"
+                :icon="tech.icon"
+              />
             </v-col>
           </v-row>
         </v-container>
-        <p>
-          Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
-          yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin
-          grog yardarm hempen halter furl. Swab barque interloper chantey
-          doubloon starboard grog black jack gangway rutters. Deadlights jack
-          lad schooner scallywag dance the hempen jig carouser broadside cable
-          strike colors. Bring a spring upon her cable holystone blow the man
-          down spanker Shiver me timbers to go on account lookout wherry
-          doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm
-          spyglass sheet transom heave to. Trysail Sail ho Corsair red ensign
-          hulk smartly boom jib rum gangway. Case shot Shiver me timbers
-          gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest
-          rutters. Fluke jib scourge of the seven seas boatswain schooner gaff
-          booty Jack Tar transom spirits.
-        </p>
       </v-col>
     </v-row>
   </v-container>
@@ -42,20 +31,51 @@ import TechCard from "./tech/techCard.vue";
   components: { TechCard },
 })
 export default class TechStack extends Vue {
-  techs: { title: string; description: string }[] = [
+  techs: { title: string; items: string[]; icon?: string }[] = [
     {
       title: "Frontend",
-      description: "VueJS & Vuetify, Angular, ASP.Net Core MVC",
+      items: [
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "VueJS",
+        "Vuetify",
+        "Angular",
+        "ASP.Net Core MVC",
+      ],
+      icon: "mdi-monitor-dashboard",
     },
     {
       title: "Backend",
-      description:
-        ".NET Core, .NET Framework, EntityFramework, T-SQL, REST, GraphQL",
+      items: [
+        "C#",
+        ".NET Core",
+        ".NET Framework",
+        "EntityFramework",
+        "T-SQL",
+        "REST",
+        "GraphQL",
+        "Java",
+        "Python",
+        "R",
+      ],
+      icon: "mdi-server-network",
     },
     {
       title: "Misc",
-      description:
-        "Kubernetes, GIT, SVN, Teamcity, Linux, Prometheus/Grafana, ELK ",
+      items: [
+        "Kubernetes",
+        "GIT",
+        "SVN",
+        "Teamcity",
+        "Linux",
+        "Docker",
+        "Prometheus/Grafana",
+        "ELK",
+        "pyTorch",
+        "openCV",
+      ],
+      icon: "mdi-xml",
     },
   ];
 }

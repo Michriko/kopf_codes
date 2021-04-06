@@ -1,29 +1,33 @@
 <template>
   <v-container class="text-center">
-    <v-row>
-      <v-col>
-        <h2>Über Mich</h2>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <p>
-          Caramels oat cake ice cream donut bonbon halvah caramels. Jelly-o
-          bonbon tiramisu chocolate cake sweet icing jelly beans tiramisu.
-          Jujubes pudding carrot cake cotton candy. Chocolate cake muffin
-          lollipop apple pie. Gummi bears candy canes wafer danish candy canes.
-          Lemon drops dessert danish croissant bear claw cookie marzipan gummi
-          bears brownie. Candy caramels muffin halvah. Tootsie roll chupa chups
-          muffin bear claw toffee. Topping liquorice wafer. Gingerbread cupcake
-          wafer chocolate bar marshmallow candy canes chocolate bar chocolate
-          bar sesame snaps. Lollipop cotton candy jelly beans pastry oat cake.
-          Halvah carrot cake donut cake. Dragée wafer fruitcake carrot cake.
-          Biscuit soufflé marzipan oat cake icing. Gingerbread pastry caramels
-          bonbon chocolate bar. Lollipop sweet candy chocolate cake. Pudding
-          gummies sweet chocolate cake dessert cheesecake marzipan gummies.
-        </p>
-      </v-col>
-    </v-row>
+    <h2>Über Mich</h2>
+    <v-responsive max-width="1020" class="mx-auto">
+      <p>
+        <strong>Informatik</strong><br />
+        Die Leidenschaft für Computer, Rätsel, Mathematik und Logik begleitet
+        mich schon seit meiner Kindheit. So kam es auch, dass ich nach der allg.
+        Hochschulreife am Karlsruher Institut für Technologie Informatik
+        studierte und erfolgreich den B.Sc. und M.Sc. absolvierte. Schon während
+        meines Studiums konnte ich als Werkstudent dabei erste Unternehmensluft
+        schnuppern und fand immer mehr Gefallen an der Softwareentwicklung. Seit
+        2019 bin ich festangestellter Fullstack-Entwickler und kann mein Wissen
+        immer weiter vertiefen. Mich begeistern vor allem Übergreifende Themen
+        vom Frontend über das Backend und die Datenbanken bis hin zur
+        darunterliegenden Plattform.
+      </p>
+      <p>
+        <strong>Schwerpunkte</strong><br />
+        Während des Studiums konnte ich vor allem Wissen in den Bereichen
+        DataScience, maschinelles Lernen, Robotik und kognitive Systeme
+        aneignen. Ein Großer Teil davon war die Auswertung von Bilddaten z.B.
+        mittels Deep Learning Methoden. Ebenso habe ich mein Wissen im IoT
+        Bereich vertieft u. A. durch meine Werkstudententätigkeit bei einem
+        Hersteller für Gebäudeautomatisierung. Aktuell beschäftige ich mich
+        hauptsächlich mit Fullstack Softwareentwicklung mit .NET Core und
+        Angular, sowie DevOps und infrastrukturellen Thematiken wie CI / CD,
+        Kubernetes und Cloud.
+      </p>
+    </v-responsive>
   </v-container>
 </template>
 
