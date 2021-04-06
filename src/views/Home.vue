@@ -15,6 +15,11 @@
         <tech-stack />
       </v-col>
     </v-row>
+    <v-row>
+      <v-col class="pa-0">
+        <contact />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -23,12 +28,14 @@ import { Vue, Component } from "vue-property-decorator";
 
 import AboutMe from "@/components/aboutMe.vue";
 import Banner from "@/components/banner.vue";
+import Contact from "@/components/contact.vue";
 import TechStack from "@/components/techStack.vue";
 
 @Component({
   components: {
     AboutMe,
     Banner,
+    Contact,
     TechStack,
   },
 })

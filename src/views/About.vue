@@ -10,7 +10,7 @@
       </p>
       <p>
         <strong>Kontakt</strong><br />
-        E-Mail: info@kopf.codes
+        E-Mail: {{ infoMail }}
       </p>
       <p>
         <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong>
@@ -65,3 +65,12 @@
     </v-card-text>
   </v-card>
 </template>
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+import { getInfoMailAddress } from "@/util/email";
+
+@Component
+export default class About extends Vue {
+  infoMail = getInfoMailAddress();
+}
+</script>

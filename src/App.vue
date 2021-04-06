@@ -11,7 +11,7 @@
           width="40"
         />
       </router-link>
-      <h1>kopf.codes</h1>
+      <h1 class="display-1">kopf.codes</h1>
     </v-app-bar>
     <v-main><router-view /></v-main>
     <v-footer class="justify-center" height="100">
