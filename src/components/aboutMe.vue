@@ -11,7 +11,7 @@
         meines Studiums konnte ich als Werkstudent dabei erste Unternehmensluft
         schnuppern und fand immer mehr Gefallen an der Softwareentwicklung. Seit
         2019 bin ich festangestellter Fullstack-Entwickler und kann mein Wissen
-        immer weiter vertiefen. Mich begeistern vor allem Übergreifende Themen
+        immer weiter vertiefen. Mich begeistern vor allem übergreifende Themen
         vom Frontend über das Backend und die Datenbanken bis hin zur
         darunterliegenden Plattform.
       </p>
