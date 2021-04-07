@@ -14,5 +14,5 @@ export function getInfoMailAddress(): string {
 }
 
 export function getMailToInfoLink(): string {
-  return `mailto://${getInfoMailAddress()}`;
+  return `mailto:${getInfoMailAddress()}`;
 }
