@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /#/home
+Allow: /#/about
+
+
+Sitemap: sitemap.xml

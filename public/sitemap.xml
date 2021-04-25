@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://kopf.codes/</loc>
+        <lastmod>2021-04-25</lastmod>
+        <image:image>
+                <image:loc>https://kopf.codes/img/logo.418b57f1.svg</image:loc>
+                <image:caption>Michael Kopf, Software / Devops Engineer, kopf.codes logo</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kopf.codes/#/about</loc>
+        <lastmod>2021-04-25</lastmod>
+    </url>
+</urlset>
