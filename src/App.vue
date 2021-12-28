@@ -31,3 +31,7 @@ import footerContent from "@/components/footerContent.vue";
 })
 export default class App extends Vue {}
 </script>
+
+<style lang="scss" scoped>
+@import "../node_modules/typeface-roboto/index.css";
+</style>
