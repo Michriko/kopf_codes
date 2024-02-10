@@ -1,6 +1,6 @@
 <template>
   <v-card class="py-4 h-100">
-    <v-icon x-large>{{ props.icon }}</v-icon>
+    <v-icon size="x-large">{{ props.icon }}</v-icon>
     <v-card-title class="block text-center">{{ title }}</v-card-title>
     <v-card-text>
       <v-chip v-for="(item, index) in description" :key="index" class="ma-1">

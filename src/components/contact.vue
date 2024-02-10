@@ -1,5 +1,5 @@
 <template>
-  <v-container class="secondary text-center" fluid>
+  <v-container class="bg-secondary text-center" fluid>
     <h2>Kontakt</h2>
     <p class="py-3">
       Sie erreichen mich unter Xing, LinkedIn, oder per Mail. Ich freue mich auf
@@ -10,8 +10,9 @@
         <v-btn
           :href="contactType.url"
           :icon="contactType.icon"
+          size="x-large"
           target="_blank"
-          x-large
+          variant="plain"
           v-on:click="onButtonClick(contactType)"
         >
         </v-btn>
