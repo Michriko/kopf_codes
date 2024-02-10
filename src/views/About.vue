@@ -5,8 +5,8 @@
       <p>Angaben gemäß §5 TMG</p>
       <p>
         Michael Kopf<br />
-        Geibelstr. 32 <br />
-        76185 Karlsruhe<br />
+        Veilchenstr. 76 <br />
+        75196 Remchingen<br />
       </p>
       <p>
         <strong>Kontakt</strong><br />
