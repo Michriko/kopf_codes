@@ -10,8 +10,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
     "@mdi/font": "7.0.96",
-    "roboto-fontface": "*",
     "core-js": "^3.35.1",
     "vue": "^3.3.0",
     "vue-router": "^4.2.5",
