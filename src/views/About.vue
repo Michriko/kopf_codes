@@ -1,6 +1,6 @@
 <template>
-  <v-card outlined elevation="10">
-    <v-card-text> <h2>Impressum</h2> </v-card-text>
+  <v-card elevation="10" outlined>
+    <v-card-text><h2>Impressum</h2></v-card-text>
     <v-card-text>
       <p>Angaben gemäß §5 TMG</p>
       <p>
@@ -65,12 +65,8 @@
     </v-card-text>
   </v-card>
 </template>
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+<script lang="ts" setup>
 import { getInfoMailAddress } from "@/util/email";
 
-@Component
-export default class About extends Vue {
-  infoMail = getInfoMailAddress();
-}
+const infoMail = getInfoMailAddress();
 </script>

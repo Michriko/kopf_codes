@@ -1,28 +1,28 @@
 <template>
   <v-img
-    class="full-height"
-    src="../assets/macbook_gray.jpg"
     :srcset="srcSet"
+    class="full-height"
+    cover
     gradient="to top, rgba(255,255,255,0), rgba(38, 50, 56,.5)"
+    src="@/assets/macbook_gray.jpg"
   >
     <v-container>
       <v-row class="mt-1">
         <v-col class="text-center text--orange">
-          <span
-            :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
+          <span :class="[smAndDown ? 'text-h4' : 'text-h3']"
             >Willkommen auf
           </span>
           <br />
-          <span
-            :class="[$vuetify.breakpoint.smAndDown ? 'display-3' : 'display-4']"
-            >kopf.codes</span
-          >
+          <span :class="[smAndDown ? 'text-h2' : 'text-h1']">kopf.codes</span>
         </v-col>
       </v-row>
       <v-row align="center">
         <v-col class="text-center">
-          <v-btn fab outlined @click="$vuetify.goTo('#about-me')">
-            <v-icon>mdi-chevron-double-down</v-icon>
+          <v-btn
+            icon="mdi-chevron-double-down"
+            variant="tonal"
+            @click="goto('#about-me')"
+          >
           </v-btn>
         </v-col>
       </v-row>
@@ -30,22 +30,20 @@
   </v-img>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+<script lang="ts" setup>
+import { useDisplay, useGoTo } from "vuetify";
 
-@Component
-export default class Banner extends Vue {
-  get srcSet(): string {
-    return `
-    ${require("@/assets/macbook_gray.500.jpg")} 500w,
-    ${require("@/assets/macbook_gray.800.jpg")} 800w,
-    ${require("@/assets/macbook_gray.1024.jpg")} 1024w,
-    ${require("@/assets/macbook_gray.1400.jpg")} 1400w,
-    ${require("@/assets/macbook_gray.2000.jpg")} 2000w,
-    ${require("@/assets/macbook_gray.2600.jpg")} 2600w,
-    ${require("@/assets/macbook_gray.3840.jpg")} 3840w`;
-  }
-}
+const { smAndDown } = useDisplay();
+const goto = useGoTo();
+
+const srcSet = `
+  ./src/assets/macbook_gray.500.jpg 500w,
+  ./src/assets/macbook_gray.800.jpg 800w,
+  ./src/assets/macbook_gray.1024.jpg 1024w,
+  ./src/assets/macbook_gray.1400.jpg 1400w,
+  ./src/assets/macbook_gray.2000.jpg 2000w,
+  ./src/assets/macbook_gray.2600.jpg 2600w,
+  ./src/assets/macbook_gray.3840.jpg 3840w`;
 </script>
 
 <style lang="scss" scoped>

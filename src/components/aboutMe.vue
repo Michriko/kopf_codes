@@ -1,7 +1,7 @@
 <template>
   <v-container class="text-center">
     <h2>Über Mich</h2>
-    <v-responsive max-width="1020" class="mx-auto">
+    <v-responsive class="mx-auto" max-width="1020">
       <p>
         <strong>Informatik</strong><br />
         Die Leidenschaft für Computer, Rätsel, Mathematik und Logik begleitet
@@ -30,10 +30,3 @@
     </v-responsive>
   </v-container>
 </template>
-
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
-
-@Component
-export default class AboutMe extends Vue {}
-</script>
